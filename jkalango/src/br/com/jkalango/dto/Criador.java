@@ -11,13 +11,13 @@ public class Criador {
 
     public Criador() {}
 
-    public Criador(String email, String nome, String perfil, String telefone) {
-        this.email = email;
+    public Criador(String nome, String email, String telefone, String perfil) {
         this.nome = nome;
-        this.perfil = perfil;
+        this.email = email;
         this.telefone = telefone;
+        this.perfil = perfil;
     }
-
+    
     public String getNome() {
         return nome;
     }

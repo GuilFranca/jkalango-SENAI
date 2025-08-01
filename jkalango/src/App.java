@@ -36,14 +36,16 @@ public class App {
 
         List<Criador> listaCriador = new ArrayList<>();
 
-        Criador c1 = new Criador();
+        Criador c1 = new Criador("Geraldo", "geraldao@gmail.com", "3036-2003", "jogador profissional desde que nasci!");
+        Criador c2 = new Criador("Marquin", "Marquin@gmail.com", "3035-2001", "jogador profissional desde que nasci!");
 
         listaCriador.add(c1);
+        listaCriador.add(c2);
 
         System.out.println(listaCriador);
 
         for (Criador criador: listaCriador) {
-            System.out.println("Nome: " + criador.getNome() + "\n" + "Descrição: " + criador.getEmail() + "\n");
+            System.out.println("Nome: " + criador.getNome() + "\n" + "email: " + criador.getEmail() + "telefone: " + criador.getTelefone() + "perfil: " + criador.getPerfil() + "\n");
         }
 
     }
